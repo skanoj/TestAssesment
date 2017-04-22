@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({"com.deny.dbrest.controller","com.dsny.dbrest.repository"})
+@ComponentScan({"com.dsny.dbrest.controller","com.dsny.dbrest.repository"})
 public class NosqlServiceApplication{ 
 
 	@Autowired
