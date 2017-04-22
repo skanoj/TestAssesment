@@ -1,35 +1,34 @@
 package com.dsny.dbrest.domain;
 
+import java.util.List;
+
 
 public class LocationSummary {
 
-	public String dayOfWeek;
-	public int sumAttendees;
+
+	public String location;
+    public List<DayAttendee> dayAttendee;
 	
-	public LocationSummary(String dayOfWeek, int sumAttendees) {
-		this.dayOfWeek = dayOfWeek;
-		this.sumAttendees = sumAttendees;
+	public LocationSummary(String location, List<DayAttendee> dayAttendee) {
+		super();
+		this.location = location;
+		this.dayAttendee = dayAttendee;
 	}
-	
-	public void setSumAttendees(int sumAttendees) {
-		this.sumAttendees = sumAttendees;
+	public String getLocation() {
+		return location;
 	}
-	public int getSumAttendees() {
-		return sumAttendees;
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	public List<DayAttendee> getDayAttendee() {
+		return dayAttendee;
+	}
+	public void setDayAttendee(List<DayAttendee> dayAttendee) {
+		this.dayAttendee = dayAttendee;
 	}
 
 	
-	public String getDayOfWeek() {
-		return dayOfWeek;
-	}
-	public void setDayOfWeek(String dayOfWeek) {
-		this.dayOfWeek = dayOfWeek;
-	}
-
-	@Override
-	public String toString() {
-		return "LocationSummary [dayOfWeek=" + dayOfWeek + ", sumAttendees="
-				+ sumAttendees + "]";
-	}
+	
+	
 
 }

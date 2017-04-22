@@ -1,7 +1,6 @@
 package com.dsny.dbrest.domain;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.stereotype.Component;
 
 public class Summary {
 

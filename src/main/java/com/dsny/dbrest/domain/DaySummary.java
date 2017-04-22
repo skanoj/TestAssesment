@@ -1,22 +1,17 @@
 package com.dsny.dbrest.domain;
 
+import java.util.List;
+
 public class DaySummary {
 
 	public String location;
-	public int sumAttendees;
-	
-	public DaySummary(String location, int sumAttendees) {
+    public List<LocationAttendee> locationAttendee;
+    
+	public DaySummary(String location, List<LocationAttendee> locationAttendee) {
+		super();
 		this.location = location;
-		this.sumAttendees = sumAttendees;
+		this.locationAttendee = locationAttendee;
 	}
-	
-	public void setSumAttendees(int sumAttendees) {
-		this.sumAttendees = sumAttendees;
-	}
-	public int getSumAttendees() {
-		return sumAttendees;
-	}
-
 	
 	public String getLocation() {
 		return location;
@@ -24,10 +19,11 @@ public class DaySummary {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-
-	@Override
-	public String toString() {
-		return "LocationSummary [location=" + location + ", sumAttendees="
-				+ sumAttendees + "]";
+	public List<LocationAttendee> getLocationAttendee() {
+		return locationAttendee;
 	}
+	public void setLocationAttendee(List<LocationAttendee> locationAttendee) {
+		this.locationAttendee = locationAttendee;
+	}
+
 }
